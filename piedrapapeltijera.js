@@ -57,6 +57,9 @@ function restartColor(){
     tijeraPc.style="background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);" }, 500);
     
 }
+function noToques(){
+    alert("Que tocas, son mis botones, los tuyos son los de arriba");
+}
 
 /*do {let mano = prompt("Ingrese : papel, piedra o tijera");
     switch(mano){

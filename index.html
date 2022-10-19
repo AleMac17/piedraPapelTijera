@@ -8,6 +8,7 @@
     <title>PiedraPapelTijera</title>
 </head>
 <body>
+    <span>by: Alejandor Maciá</span>
     <div id="botones">
         <button id="piedra" onclick="juego(piedra)"><i class="fa-solid fa-hand-back-fist"></i></button>
         <button id="papel" onclick="juego(papel)"><i class="fa-solid fa-hand"></i></button>
@@ -30,9 +31,9 @@
         </div>
     </div>
     <div id="botones">
-        <button id="piedra-pc" ><i class="fa-solid fa-hand-back-fist"></i></button>
-        <button id="papel-pc" ><i class="fa-solid fa-hand"></i></button>
-        <button id="tijera-pc" ><i class="fa-solid fa-hand-scissors"></i></button>
+        <button id="piedra-pc" onclick="noToques()" ><i class="fa-solid fa-hand-back-fist"></i></button>
+        <button id="papel-pc" onclick="noToques()" ><i class="fa-solid fa-hand"></i></button>
+        <button id="tijera-pc" onclick="noToques()"><i class="fa-solid fa-hand-scissors"></i></button>
     </div>
     <script src="https://kit.fontawesome.com/f85419a52c.js" crossorigin="anonymous"></script>
     <script src="piedrapapeltijera.js"></script>
