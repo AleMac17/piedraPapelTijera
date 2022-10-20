@@ -9,6 +9,8 @@ let piedraPc = document.getElementById("piedra-pc");
 let papelPc = document.getElementById("papel-pc");
 let tijeraPc = document.getElementById("tijera-pc");
 
+let aCuanto = prompt("Al mejor de cuanto? 3 o 5")
+
 
 
 function juego(mano){
@@ -50,6 +52,20 @@ function juego(mano){
     document.getElementById("puntaje-persona").textContent=jugador;
     document.getElementById("puntaje-pc").textContent=computadora;
     restartColor()
+    if(aCuanto==3){
+        if(jugador==2){
+            alert("felicitaciones, ganaste")
+        }else if (computadora ==2){
+            alert("felicitaciones, perdiste")
+        }
+    }
+    if(aCuanto==5){
+        if(jugador==3){
+            alert("felicitaciones, ganaste")
+        }else if (computadora ==3){
+            alert("felicitaciones, perdiste")
+        }
+    }
 }
 function restartColor(){
     setTimeout(() => {  papelPc.style="background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);"
