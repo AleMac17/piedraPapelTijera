@@ -9,7 +9,7 @@ let piedraPc = document.getElementById("piedra-pc");
 let papelPc = document.getElementById("papel-pc");
 let tijeraPc = document.getElementById("tijera-pc");
 
-let aCuanto = prompt("Al mejor de cuanto? 3 o 5")
+//let aCuanto = prompt("Al mejor de cuanto? 3 o 5")
 
 
 
@@ -52,7 +52,7 @@ function juego(mano){
     document.getElementById("puntaje-persona").textContent=jugador;
     document.getElementById("puntaje-pc").textContent=computadora;
     restartColor()
-    if(aCuanto==3){
+   /* if(aCuanto==3){
         if(jugador==2){
             alert("felicitaciones, ganaste")
         }else if (computadora ==2){
@@ -65,7 +65,7 @@ function juego(mano){
         }else if (computadora ==3){
             alert("felicitaciones, perdiste")
         }
-    }
+    }*/
 }
 function restartColor(){
     setTimeout(() => {  papelPc.style="background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);"
@@ -74,41 +74,5 @@ function restartColor(){
     
 }
 function noToques(){
-    alert("Que tocas, son mis botones, los tuyos son los de arriba");
+    alert("No toques mis botones, los tuyos son los de arriba");
 }
-
-/*do {let mano = prompt("Ingrese : papel, piedra o tijera");
-    switch(mano){
-    case "papel": mano=1;break;
-    case "piedra": mano=2;break;
-    case "tijera": mano=3;break;
-    default: alert("Sos un pelotudo, te dije papel,piedra o tijera");
-}*/
-
-/*if(mano == manoComputadora){
-    alert("Empataste, el puntaje total de computadora es" +computadora+" tu puntaje es "+jugador);
-}
-if(mano ==1 && manoComputadora == 2){
-    jugador++;
-    alert("Ganaste, el puntaje total de computadora es "+computadora+" tu puntaje es "+jugador);
-}
-if(mano ==1 && manoComputadora == 3){
-    computadora++;
-    alert("Perdiste, el puntaje total de computadora es "+computadora+" tu puntaje es "+jugador);
-}
-if(mano ==2 && manoComputadora == 1){
-    computadora++;
-    alert("Perdiste, el puntaje total de computadora es "+computadora+" tu puntaje es "+jugador);
-}
-if(mano ==2 && manoComputadora == 3){
-    jugador++;
-    alert("Ganaste, el puntaje total de computadora es "+computadora+" tu puntaje es "+jugador);
-}
-if(mano ==3 && manoComputadora == 1){
-    jugador++;
-    alert("Ganaste, el puntaje total de computadora es "+computadora+" tu puntaje es "+jugador);
-}
-if(mano ==3 && manoComputadora == 2){
-    computadora++;
-    alert("Perdiste, el puntaje total de computadora es "+computadora+" tu puntaje es "+jugador);
-}*/
